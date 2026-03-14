@@ -54,22 +54,16 @@
     .icon {
       width: 80px;
       height: 80px;
-      background: var(--accent);
       border-radius: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
       flex-shrink: 0;
-      box-shadow: 0 4px 16px rgba(34, 139, 34, 0.35);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
     }
 
-    /* Crosshair SVG inside icon */
-    .icon svg {
-      width: 44px;
-      height: 44px;
-      stroke: rgba(255,255,255,0.92);
-      stroke-width: 1.6;
-      fill: none;
+    .icon img {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
 
     .hero-text h1 {
@@ -186,15 +180,7 @@
   <!-- Hero -->
   <div class="hero">
     <div class="icon">
-      <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-        <!-- Crosshair -->
-        <circle cx="22" cy="22" r="10"/>
-        <circle cx="22" cy="22" r="3"/>
-        <line x1="22" y1="4"  x2="22" y2="12"/>
-        <line x1="22" y1="32" x2="22" y2="40"/>
-        <line x1="4"  y1="22" x2="12" y2="22"/>
-        <line x1="32" y1="22" x2="40" y2="22"/>
-      </svg>
+      <img src="icon.png" alt="Reloader's Bench app icon">
     </div>
     <div class="hero-text">
       <h1>Reloader's Bench</h1>
@@ -214,7 +200,7 @@
       </div>
       <div class="row-body">
         <div class="row-label">Email</div>
-        <div class="row-value"><a href="mailto:pwillsey@gmail.com">pwillsey@gmail.com</a></div>
+        <div class="row-value"><a href="mailto:support@reloadersbench.app">support@reloadersbench.app</a></div>
       </div>
     </div>
   </div>
@@ -225,7 +211,7 @@
     <div class="prose">
       <p>Reloader's Bench does not collect, store, or share any personal data. All load data you enter is stored locally on your device and synced privately via iCloud — only you can access it.</p>
       <p>If this changes in the future, this policy will be updated accordingly.</p>
-      <p>Questions? Reach out at <a href="mailto:pwillsey@gmail.com">pwillsey@gmail.com</a>.</p>
+      <p>Questions? Reach out at <a href="mailto:support@reloadersbench.app">support@reloadersbench.app</a>.</p>
     </div>
   </div>
 
